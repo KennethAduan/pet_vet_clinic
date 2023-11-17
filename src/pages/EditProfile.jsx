@@ -8,7 +8,7 @@ const EditProfile = () => {
             <h1 className="text-2xl font-bold tracking-wider text-center text-secondary lg:text-4xl sm:text-2xl">
               My Profile
             </h1>
-            <form className="space-y-4">
+            <form className="py-5 space-y-4">
               {/* Owners name */}
               <div>
                 <Input label="Owners name" />
