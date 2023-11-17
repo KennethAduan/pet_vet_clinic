@@ -117,7 +117,7 @@ const Appointment = () => {
             <h1 className="text-2xl font-bold tracking-wider text-center text-secondary lg:text-4xl sm:text-2xl">
               Make an Appointment
             </h1>
-            <form className="space-y-4">
+            <form className="py-5 space-y-4">
               {/* Select Doctor */}
               <div className="w-full">
                 <Select label="Select Doctor">
@@ -162,8 +162,7 @@ const SendFeedBack = () => {
           </p>
 
           <p className="mt-3 text-2xl text-center text-black">
-            We’d love to hear from you. Please fill out this form or shoot us an
-            email.
+          Your feedback shapes our care! Share thoughts on check-ups, meds, vaccinations. Help us enhance your vet services!
           </p>
         </div>
 
