@@ -5,6 +5,7 @@ import {
   Input,
   Button,
   Textarea,
+  Rating,
 } from "@material-tailwind/react";
 import { Link } from "react-scroll";
 const HeroContent = () => {
@@ -75,6 +76,7 @@ const TestimonialCard = ({ text, imageSrc, name }) => (
       />
       <div className="mx-2">
         <h1 className="font-semibold text-gray-800 dark:text-white">{name}</h1>
+        <Rating value={5} readonly />
         {/* <div className="flex items-center gap-0 5">
           <StarIcon />
           <StarIcon />

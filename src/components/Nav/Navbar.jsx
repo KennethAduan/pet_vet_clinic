@@ -40,7 +40,7 @@ function MobileNavLink() {
   };
 
   return (
-    <ul className="flex flex-col gap-2 lg:hidden">
+    <ul className="flex flex-col gap-2 py-4 lg:hidden">
       <li className="cursor-pointer" onClick={() => handleNavigate("/")}>
         <h1 className="text-black">Home</h1>
       </li>
