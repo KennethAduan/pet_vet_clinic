@@ -7,6 +7,9 @@ import {
   Textarea,
   Rating,
 } from "@material-tailwind/react";
+import Navbar from '../components/Nav/Navbar'
+import Footer from '../components/Footer/Footer'
+
 import { Link } from "react-scroll";
 const HeroContent = () => {
   return (
@@ -194,10 +197,12 @@ const SendFeedBack = () => {
 const Home = () => {
   return (
     <>
-      <HeroContent />
-      <Testimonials />
-      <SendFeedBack />
-      <Appointment />
+      <Navbar/>
+        <HeroContent />
+        <Testimonials />
+        <SendFeedBack />
+        <Appointment />
+      <Footer/>
     </>
   );
 };
