@@ -41,7 +41,7 @@ function MobileNavLink() {
 
   return (
     <ul className="flex flex-col gap-2 py-4 lg:hidden">
-      <li className="cursor-pointer" onClick={() => handleNavigate("/")}>
+      <li className="cursor-pointer" onClick={() => handleNavigate("/home")}>
         <h1 className="text-black">Home</h1>
       </li>
       <li className="cursor-pointer" onClick={() => handleNavigate("/doctors")}>
@@ -64,9 +64,15 @@ function MobileNavLink() {
 
 const ProfileNavigation = () => {
   const navigate = useNavigate();
+
   const hanldeNavigateEditProfile = () => {
     navigate("/editprofile");
   };
+
+  const hanldeNavigateSignOut = () => {
+    navigate("/");
+  };
+
   return (
     <Menu>
       <Tooltip title="Profile">
@@ -121,7 +127,7 @@ const ProfileNavigation = () => {
               fill="#90A4AE"
             />
           </svg>
-          <Typography variant="small" className="font-medium">
+          <Typography variant="small" className="font-medium" onClick={hanldeNavigateSignOut}>
             Sign Out
           </Typography>
         </MenuItem>
