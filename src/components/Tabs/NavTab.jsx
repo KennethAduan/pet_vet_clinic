@@ -17,7 +17,7 @@ const NavTab = () => {
     setValue(newValue);
     switch (newValue) {
       case 0:
-        navigate("/");
+        navigate("/home");
         break;
       case 1:
         navigate("/doctors");

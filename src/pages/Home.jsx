@@ -7,8 +7,8 @@ import {
   Textarea,
   Rating,
 } from "@material-tailwind/react";
-import Navbar from '../components/Nav/Navbar'
-import Footer from '../components/Footer/Footer'
+// import Navbar from "../components/Nav/Navbar";
+// import Footer from "../components/Footer/Footer";
 
 import { Link } from "react-scroll";
 const HeroContent = () => {
@@ -51,6 +51,7 @@ const HeroContent = () => {
   );
 };
 
+// eslint-disable-next-line react/prop-types
 const TestimonialCard = ({ text, imageSrc, name }) => (
   <div className="p-8 transition-transform transform bg-white border rounded-lg hover:shadow-lg hover:scale-105">
     <p className="leading-loose text-gray-500 dark:text-gray-400">{text}</p>
@@ -62,8 +63,7 @@ const TestimonialCard = ({ text, imageSrc, name }) => (
       />
       <div className="mx-2">
         <h1 className="font-semibold text-gray-800 dark:text-white">{name}</h1>
-          <Rating value={5} readonly />
-        
+        <Rating value={5} readonly />
       </div>
     </div>
   </div>
@@ -165,27 +165,30 @@ const SendFeedBack = () => {
           </p>
 
           <p className="mt-3 text-2xl text-center text-black">
-          Your feedback shapes our care! Share thoughts on check-ups, meds, vaccinations. Help us enhance your vet services!
+            Your feedback shapes our care! Share thoughts on check-ups, meds,
+            vaccinations. Help us enhance your vet services!
           </p>
         </div>
 
         <div className="flex justify-center mt-6">
           <div className="p-4 py-6 rounded-lg bg-gray-50 md:p-8 w-[600px]">
             <form className="space-y-4">
-              
-                {/* STAR */}
-                <Rating value={0} interactive="true" onChange={(value) => console.log(value)} />
-              
-                {/* Fullname */}
-                <Input label="Name" />
-              
-                {/* MESSAGE */}
-                <Textarea label="Message" />
-              
-                <Button fullWidth className="bg-FontMainColor">
-                  Send Feedback
-                </Button>
-              
+              {/* STAR */}
+              <Rating
+                value={0}
+                interactive="true"
+                onChange={(value) => console.log(value)}
+              />
+
+              {/* Fullname */}
+              <Input label="Name" />
+
+              {/* MESSAGE */}
+              <Textarea label="Message" />
+
+              <Button fullWidth className="bg-FontMainColor">
+                Send Feedback
+              </Button>
             </form>
           </div>
         </div>
@@ -197,12 +200,10 @@ const SendFeedBack = () => {
 const Home = () => {
   return (
     <>
-      <Navbar/>
-        <HeroContent />
-        <Testimonials />
-        <SendFeedBack />
-        <Appointment />
-      <Footer/>
+      <HeroContent />
+      <Testimonials />
+      <SendFeedBack />
+      <Appointment />
     </>
   );
 };
